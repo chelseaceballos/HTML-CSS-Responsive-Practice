@@ -207,3 +207,78 @@ footer h3{
 .right img{
     width:60%;
 }
+
+
+/*Desktop first - max-width to scale down
+modible first -  min-width to scale up*/
+
+/* Media Queries */
+
+/*  /tablet First*/
+
+@media(max-width:800px){ 
+     #about{
+         background-image: none;
+         background-color: grey;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+     #about div{
+         width: 50%;
+     }
+     .text div{
+         width:80%;
+     }
+}
+
+@media(max-width:500px){
+   nav{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .links{
+       width: 100%;
+   }
+   .logo{
+       width: 20%;
+   }
+
+   #about div {
+       margin:0;
+   }
+   .wrapper{
+       flex-direction: column;
+
+   }
+   .wrapper div{
+       width:100%;
+   }
+   .mobile flip{
+       flex-direction: column-reverse;
+   }
+   .shop-bg{
+       height: 40vh;
+       width:100%;
+
+   }
+  .text div{
+      width:80%;
+  }
+  footer{
+      flex-direction: column;
+  }
+  .left, .right {
+      width: 100%;
+  }
+  .right{
+      order:-1;
+  }
+  fotoer h2{
+      order:-2;
+  }
+  .copyright{
+      text-align:center;
+  }
+}
